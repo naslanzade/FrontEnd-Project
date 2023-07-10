@@ -1,0 +1,394 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../../fonts/ArchivoNarrow-Italic.ttf);
+  font-family: mySecondFont;
+  src: url(../../fonts/ArchivoNarrow-Medium.ttf);
+}
+header #nav {
+  background-color: black;
+}
+header #nav .container {
+  overflow: hidden;
+}
+header #nav .container .logo {
+  padding-top: 15px;
+}
+header #nav .container .nav-area .list ul {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+header #nav .container .nav-area .list ul li a {
+  text-decoration: none;
+  color: rgb(169, 165, 165);
+  font-size: 18px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+  font-family: mySecondFont;
+}
+header #nav .container .log .list ul {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+header #nav .container .log .list ul li a {
+  text-decoration: none;
+  color: rgb(169, 165, 165);
+  font-size: 18px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+  font-family: mySecondFont;
+}
+header #nav .container .shop {
+  padding-top: 15px;
+}
+header #nav .container .shop .list {
+  display: flex;
+  justify-content: center;
+}
+header #nav .container .shop .list .wishlist {
+  cursor: pointer;
+}
+header #nav .container .shop .list .wishlist a {
+  text-decoration: none !important;
+  color: rgb(169, 165, 165);
+}
+header #nav .container .shop .list .wishlist a .wish {
+  transition: all 0.5s;
+}
+header #nav .container .shop .list .wishlist a .wish sup {
+  position: relative;
+  font-size: 15px;
+  left: 10px;
+  top: 8px;
+  width: 10px;
+  height: 15px;
+  padding: 1px 3px;
+  color: rgb(240, 238, 238);
+}
+header #nav .container .shop .list .wishlist a .wish i {
+  font-size: 20px;
+  text-align: center;
+}
+header #nav .container .shop .list .cartlist {
+  cursor: pointer;
+}
+header #nav .container .shop .list .cartlist a {
+  text-decoration: none !important;
+  color: rgb(169, 165, 165);
+}
+header #nav .container .shop .list .cartlist a .cart {
+  transition: all 0.5s;
+}
+header #nav .container .shop .list .cartlist a .cart sup {
+  position: relative;
+  font-size: 15px;
+  left: 10px;
+  top: 10px;
+  width: 10px;
+  height: 15px;
+  padding: 1px 3px;
+  color: rgb(240, 238, 238);
+}
+header #nav .container .shop .list .cartlist a .cart i {
+  font-size: 20px;
+  text-align: center;
+}
+header #nav-phone {
+  background-color: black;
+  display: none;
+}
+header #nav-phone .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header #nav-phone .container .logo .close {
+  font-size: 25px;
+  color: rgb(169, 165, 165);
+  position: relative;
+  top: 5px;
+  left: 19px;
+  cursor: pointer;
+}
+header #nav-phone .container .logo .open {
+  font-size: 25px;
+  color: rgb(169, 165, 165);
+  position: relative;
+  top: 5px;
+  left: 350px;
+  cursor: pointer;
+}
+header .sidebar {
+  position: fixed;
+  height: 100vh;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+header .sidebar .sidebar-set {
+  height: 100%;
+  padding: 20px 0;
+  width: 200px;
+  background-color: black;
+}
+header .sidebar .sidebar-set .close-part {
+  padding-bottom: 40px;
+}
+header .sidebar .sidebar-set .close-part i {
+  position: absolute;
+  right: 20px;
+  transition: all 0.5s;
+  color: rgb(169, 165, 165);
+}
+header .sidebar .sidebar-set .tab-menu .infos ul {
+  list-style: none;
+  padding: 0px;
+  transition: all 0.5s;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul li a {
+  text-decoration: none;
+  color: rgb(169, 165, 165);
+  padding-left: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: mySecondFont;
+  font-size: 16px;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop {
+  display: flex;
+  justify-content: center;
+  margin-right: 80px;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop .wishlist {
+  text-decoration: none !important;
+  color: rgb(169, 165, 165);
+  cursor: pointer;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop .wishlist .wish {
+  transition: all 0.5s;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop .wishlist .wish i {
+  font-size: 20px;
+  text-align: center;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist {
+  text-decoration: none !important;
+  color: rgb(169, 165, 165);
+  cursor: pointer;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist .cart {
+  transition: all 0.5s;
+}
+header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist .cart i {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+  #nav-phone {
+    display: block !important;
+  }
+  #nav {
+    display: none !important;
+  }
+  #sidebar {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #hero-part .slides .owl-prev {
+    display: none;
+  }
+  #hero-part .slides .owl-next {
+    display: none;
+  }
+  #hero-part .slides .bg-img {
+    position: relative;
+    height: 450px !important;
+  }
+  #hero-part .slides .bg-img img {
+    width: 650px !important;
+    filter: brightness(65%) !important;
+  }
+  #hero-part .slides .bg-img .text-part h6 {
+    position: absolute;
+    font-family: mySecondFont;
+    color: white;
+    left: 20% !important;
+    top: 40%;
+    width: 450px;
+    text-align: center;
+    font-size: 12px !important;
+    letter-spacing: 7px !important;
+  }
+  #hero-part .slides .bg-img .text-part h2 {
+    position: absolute;
+    font-family: mySecondFont;
+    color: white;
+    left: 10% !important;
+    top: 45%;
+    width: 550px;
+    text-align: center;
+    font-size: 12px !important;
+    letter-spacing: 10px !important;
+  }
+  #hero-part .slides .bg-img .text-part a {
+    text-decoration: none !important;
+    position: absolute;
+    top: 53%;
+    left: 50% !important;
+    width: 150px !important;
+    border: 1.5px white solid;
+    height: 40px !important;
+    text-align: center;
+    padding: 5px !important;
+    color: white;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #hero-part .slides .bg-img .text-part a i {
+    padding-left: 5px;
+  }
+  #hero-part .slides .bg-img .text-part a:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #albums {
+    text-align: center;
+  }
+  #albums .heading p {
+    margin-top: 50px;
+    font-family: mySecondFont;
+    font-size: 15px;
+    color: rgb(169, 165, 165);
+  }
+  #albums .heading h2 {
+    font-family: mySecondFont;
+    letter-spacing: 10px;
+  }
+  #albums .album-text {
+    margin-top: 50px;
+    margin-left: 10px !important;
+  }
+  #albums .album-text p {
+    font-family: mySecondFont;
+    width: 450px !important;
+    color: #5f5f5f;
+    font-size: 12px !important;
+    line-height: 2;
+    font-weight: 400;
+  }
+}
+.active-bar {
+  transform: translateX(0px);
+  transition: all 0.5s;
+}
+
+.hide {
+  transition: all 0.5s;
+  transform: translateX(-200px);
+  z-index: -1;
+}
+
+main #hero-part .slides .owl-prev {
+  display: none;
+}
+main #hero-part .slides .owl-next {
+  display: none;
+}
+main #hero-part .slides .bg-img {
+  position: relative;
+}
+main #hero-part .slides .bg-img img {
+  width: auto;
+  filter: brightness(65%);
+}
+main #hero-part .slides .bg-img .text-part h6 {
+  position: absolute;
+  font-family: mySecondFont;
+  color: white;
+  left: 40%;
+  top: 40%;
+  width: 450px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 20px;
+}
+main #hero-part .slides .bg-img .text-part h2 {
+  position: absolute;
+  font-family: mySecondFont;
+  color: white;
+  left: 37%;
+  top: 45%;
+  width: 550px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 30px;
+}
+main #hero-part .slides .bg-img .text-part a {
+  text-decoration: none !important;
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  width: 200px;
+  border: 1.5px white solid;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-family: mySecondFont;
+  transition: all 0.5s;
+}
+main #hero-part .slides .bg-img .text-part a i {
+  padding-left: 5px;
+}
+main #hero-part .slides .bg-img .text-part a:hover {
+  background-color: white;
+  color: black;
+}
+main #albums {
+  text-align: center;
+}
+main #albums .heading p {
+  margin-top: 50px;
+  font-family: mySecondFont;
+  font-size: 15px;
+  color: rgb(169, 165, 165);
+}
+main #albums .heading h2 {
+  font-family: mySecondFont;
+  letter-spacing: 10px;
+}
+main #albums .album-text {
+  margin-top: 50px;
+  margin-left: 300px;
+}
+main #albums .album-text p {
+  font-family: mySecondFont;
+  width: 700px;
+  color: #5f5f5f;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: black !important;
+}/*# sourceMappingURL=home.css.map */
