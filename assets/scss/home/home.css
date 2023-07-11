@@ -128,6 +128,12 @@ header .sidebar {
   left: 0;
   transition: all 0.5s;
 }
+header .sidebar .owl-next {
+  display: none;
+}
+header .sidebar .owl-prev {
+  display: none;
+}
 header .sidebar .sidebar-set {
   height: 100%;
   padding: 20px 0;
@@ -241,8 +247,7 @@ header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist .cart i {
     font-size: 12px !important;
     letter-spacing: 10px !important;
   }
-  #hero-part .slides .bg-img .text-part a {
-    text-decoration: none !important;
+  #hero-part .slides .bg-img .text-part button {
     position: absolute;
     top: 53%;
     left: 50% !important;
@@ -251,16 +256,21 @@ header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist .cart i {
     height: 40px !important;
     text-align: center;
     padding: 5px !important;
+  }
+  #hero-part .slides .bg-img .text-part button a {
+    text-decoration: none !important;
     color: white;
     cursor: pointer;
     font-family: mySecondFont;
     transition: all 0.5s;
   }
-  #hero-part .slides .bg-img .text-part a i {
+  #hero-part .slides .bg-img .text-part button a i {
     padding-left: 5px;
   }
-  #hero-part .slides .bg-img .text-part a:hover {
+  #hero-part .slides .bg-img .text-part button button:hover {
     background-color: white;
+  }
+  #hero-part .slides .bg-img .text-part button button:hover a {
     color: black;
   }
 }
@@ -289,6 +299,132 @@ header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist .cart i {
     font-size: 12px !important;
     line-height: 2;
     font-weight: 400;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #new {
+    height: 105% !important;
+  }
+  #new a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    margin-top: 150px;
+  }
+  #new a .card {
+    width: 400px !important;
+    height: 75% !important;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+  }
+  #new a .card .image {
+    position: relative;
+  }
+  #new a .card .image img {
+    width: 100%;
+  }
+  #new a .card .image .cost {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: white;
+    font-family: mySecondFont;
+    font-size: 15px !important;
+    border-radius: 15px;
+    padding-left: 5px;
+    width: 50px !important;
+    display: none;
+  }
+  #new a .card .image .heart {
+    position: absolute;
+    top: 30px;
+    left: 350px !important;
+    display: none;
+  }
+  #new a .card .image .basket {
+    position: absolute;
+    top: 55px;
+    left: 350px !important;
+    display: none;
+  }
+  #new a .card .name {
+    text-align: center;
+    font-family: mySecondFont;
+    padding-top: 10px;
+    background-color: #f5f9fa;
+  }
+  #new a .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  #new a .card:hover .heart {
+    display: block !important;
+  }
+  #new a .card:hover .basket {
+    display: block !important;
+  }
+  #new a .card:hover .cost {
+    display: block !important;
+  }
+  #new .button-part {
+    margin-bottom: 20px !important;
+    text-align: center;
+  }
+  #new .button-part button {
+    border: 1.5px black solid;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    transition: all 0.5s;
+  }
+  #new .button-part button a {
+    text-decoration: none !important;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #new .button-part button a i {
+    padding-left: 5px;
+  }
+  #new .button-part button:hover {
+    border: 1.5px white solid;
+    background-color: black;
+  }
+  #new .button-part button:hover a {
+    color: white;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #feature .bg-image .image {
+    width: 250px !important;
+    height: 250px !important;
+    margin-left: 250px !important;
+  }
+  #feature .bg-image .image img {
+    width: 100%;
+    height: 100%;
+  }
+  #feature .bg-image .text {
+    margin-left: 50px !important;
+    color: #fff;
+    font-family: mySecondFont;
+  }
+  #feature .bg-image .text p {
+    font-size: 15px;
+  }
+  #feature .bg-image .text h2 {
+    font-size: 15px !important;
+    letter-spacing: 5px !important;
+  }
+  #feature .bg-image .text-part {
+    margin-left: 50px !important;
+    color: #fff;
+    font-family: mySecondFont;
+    font-size: 12px !important;
+    line-height: 2;
+    font-weight: 400;
+    width: 150px !important;
   }
 }
 .active-bar {
@@ -337,8 +473,7 @@ main #hero-part .slides .bg-img .text-part h2 {
   font-size: 30px;
   letter-spacing: 30px;
 }
-main #hero-part .slides .bg-img .text-part a {
-  text-decoration: none !important;
+main #hero-part .slides .bg-img .text-part button {
   position: absolute;
   top: 53%;
   left: 47%;
@@ -351,12 +486,19 @@ main #hero-part .slides .bg-img .text-part a {
   cursor: pointer;
   font-family: mySecondFont;
   transition: all 0.5s;
+  background-color: transparent;
+}
+main #hero-part .slides .bg-img .text-part a {
+  text-decoration: none !important;
+  color: white;
 }
 main #hero-part .slides .bg-img .text-part a i {
   padding-left: 5px;
 }
-main #hero-part .slides .bg-img .text-part a:hover {
+main #hero-part .slides .bg-img .text-part button:hover {
   background-color: white;
+}
+main #hero-part .slides .bg-img .text-part button:hover a {
   color: black;
 }
 main #albums {
@@ -383,6 +525,238 @@ main #albums .album-text p {
   font-size: 15px;
   line-height: 2;
   font-weight: 400;
+}
+main #latest-albums-area .albums {
+  padding-top: 40px;
+}
+main #latest-albums-area .albums a {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+}
+main #latest-albums-area .albums a .card {
+  width: 230px;
+  height: 100%;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+main #latest-albums-area .albums a .card .image {
+  position: relative;
+}
+main #latest-albums-area .albums a .card .image .cost {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  background-color: white;
+  font-family: mySecondFont;
+  font-size: 13px;
+  border-radius: 15px;
+  padding-left: 5px;
+  width: 40px;
+  display: none;
+}
+main #latest-albums-area .albums a .card .image .heart {
+  position: absolute;
+  top: 30px;
+  left: 190px;
+  display: none;
+}
+main #latest-albums-area .albums a .card .image .basket {
+  position: absolute;
+  top: 55px;
+  left: 190px;
+  display: none;
+}
+main #latest-albums-area .albums a .card .name {
+  text-align: center;
+  font-family: mySecondFont;
+  padding-top: 10px;
+}
+main #latest-albums-area .albums a .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+main #latest-albums-area .albums a .card:hover .name {
+  background-color: #f5f9fa;
+  height: 50px;
+}
+main #latest-albums-area .albums a .card:hover .heart {
+  display: block !important;
+}
+main #latest-albums-area .albums a .card:hover .basket {
+  display: block !important;
+}
+main #latest-albums-area .albums a .card:hover .cost {
+  display: block !important;
+}
+main #latest-albums-area .albums .owl-next {
+  position: absolute;
+  left: 1260px;
+  bottom: 175px;
+  background-color: #fff;
+  border: 1px black solid;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+}
+main #latest-albums-area .albums .owl-prev {
+  position: absolute;
+  right: 1285px;
+  bottom: 175px;
+  background-color: #fff;
+  border: 1px black solid;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+}
+main #new {
+  background-color: #f5f9fa;
+  height: 65vh;
+}
+main #new .heading {
+  text-align: center;
+}
+main #new .heading p {
+  margin-top: 50px;
+  font-family: mySecondFont;
+  font-size: 15px;
+  color: rgb(169, 165, 165);
+}
+main #new .heading h2 {
+  text-align: center;
+  font-family: mySecondFont;
+  letter-spacing: 10px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+main #new a {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  margin-top: 150px;
+}
+main #new a .card {
+  width: 250px;
+  height: 100%;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+main #new a .card .image {
+  position: relative;
+}
+main #new a .card .image img {
+  width: 100%;
+}
+main #new a .card .image .cost {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  background-color: white;
+  font-family: mySecondFont;
+  font-size: 13px;
+  border-radius: 15px;
+  padding-left: 5px;
+  width: 40px;
+  display: none;
+}
+main #new a .card .image .heart {
+  position: absolute;
+  top: 30px;
+  left: 210px;
+  display: none;
+}
+main #new a .card .image .basket {
+  position: absolute;
+  top: 55px;
+  left: 210px;
+  display: none;
+}
+main #new a .card .name {
+  text-align: center;
+  font-family: mySecondFont;
+  padding-top: 10px;
+  background-color: #f5f9fa;
+}
+main #new a .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+main #new a .card:hover .heart {
+  display: block !important;
+}
+main #new a .card:hover .basket {
+  display: block !important;
+}
+main #new a .card:hover .cost {
+  display: block !important;
+}
+main #new .button-part {
+  margin-top: 30px;
+  text-align: center;
+}
+main #new .button-part button {
+  border: 1.5px black solid;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+}
+main #new .button-part button a {
+  text-decoration: none !important;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-family: mySecondFont;
+  transition: all 0.5s;
+}
+main #new .button-part button a i {
+  padding-left: 5px;
+}
+main #new .button-part button:hover {
+  border: 1.5px white solid;
+  background-color: black;
+}
+main #new .button-part button:hover a {
+  color: white;
+}
+main #feature .bg-image {
+  background-image: url(../../images/bg-4.jpg);
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #feature .bg-image .image {
+  width: 350px;
+  height: 350px;
+  margin-left: 350px;
+}
+main #feature .bg-image .image img {
+  width: 100%;
+  height: 100%;
+}
+main #feature .bg-image .text {
+  margin-left: 350px;
+  color: #fff;
+  font-family: mySecondFont;
+}
+main #feature .bg-image .text p {
+  font-size: 15px;
+}
+main #feature .bg-image .text h2 {
+  font-size: 18px;
+  letter-spacing: 10px;
+}
+main #feature .bg-image .text-part {
+  margin-left: 350px;
+  color: #fff;
+  font-family: mySecondFont;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+  width: 550px;
 }
 
 .sticky {

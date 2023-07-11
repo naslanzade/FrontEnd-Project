@@ -40,17 +40,50 @@ $(document).ready(function () {
 
      //Sticky navbar
      window.onscroll = function () { myFunction() };
-     var navbar = document.getElementById("nav");
+
+     var navbar = document.querySelector("#nav");
      var sticky = navbar.offsetTop;
+   
      function myFunction() {
-         if (window.pageYOffset >= sticky) {
-             navbar.classList.add("sticky")
-         } else {
-             navbar.classList.remove("sticky");
-         }
+       if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+       } else {
+         navbar.classList.remove("sticky");
+       }
      }
- 
-     AOS.init();
-     AOS.init("fade-up");
+
+
+
+    //  //Albums-Carousel
+    $('.albums').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav:true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav:false
+            },
+            576: {
+                items: 2,
+                nav:false
+            },
+            768: {
+                items: 3,
+                nav:false
+            }, 
+            992: {
+                items: 4,
+                nav:false
+            },           
+            1200: {
+                items: 5
+            },
+               
+                     
+
+        }
+    })
 
 });
