@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/lib/animate/animate.min.css">
     <link rel="stylesheet" href="./assets/scss/home/home.css">
     <title>Home</title>
 </head>
 
 <body>
-
+    <!-- Header-part-start -->
     <header>
         <section id="nav">
             <div class="container">
@@ -121,7 +122,9 @@
 
         </section>
     </header>
+    <!-- Header-part-end -->
 
+    <!-- Main-part-start -->
     <main>
         <section id="hero-part">
             <div class="slides owl-carousel owl-theme">
@@ -131,9 +134,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="text-part">
-                                    <h6 class="albums">LATEST ALBUM</h6>
-                                    <h2 class="time">BEYOND TIME</h2>
-                                    <button><a href="">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                                    <h6 class="albums wow fadeInUp" data-wow-delay="100ms">LATEST ALBUM</h6>
+                                    <h2 class="time wow fadeInUp" data-wow-delay="300ms">BEYOND TIME</h2>
+                                    <button class="wow fadeInUp" data-wow-delay="500ms"><a href="">Discover<i class="fa-solid fa-angles-right"></i></a></button>
                                 </div>
                             </div>
                         </div>
@@ -145,9 +148,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="text-part">
-                                    <h6 class="albums">LATEST ALBUM</h6>
-                                    <h2 class="time">BEYOND TIME</h2>
-                                    <button><a href="">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                                    <h6 class="albums wow fadeInUp" data-wow-delay="100ms">LATEST ALBUM</h6>
+                                    <h2 class="time wow fadeInUp" data-wow-delay="300ms">BEYOND TIME</h2>
+                                    <button class="wow fadeInUp" data-wow-delay="500ms"><a href="">Discover<i class="fa-solid fa-angles-right"></i></a></button>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +160,7 @@
         </section>
 
         <section id="albums">
-            <div class="container">
+            <div class="container wow fadeInUp" data-wow-delay="100ms">
                 <div class="row">
                     <div class="col-12">
                         <div class="heading">
@@ -175,15 +178,23 @@
         </section>
 
         <section id="latest-albums-area">
-            <div class="container">
+            <div class="container wow fadeInUp" data-wow-delay="100ms">
                 <div class="row">
                     <div class="albums owl-carousel owl-theme">
                         <a href="">
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$2.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/peggy1.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -195,8 +206,15 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$3.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/eminem.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -208,8 +226,16 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$2.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/skyriptonite.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -221,8 +247,16 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$4.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/sam smith.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -234,8 +268,16 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$1.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/hajime.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -247,8 +289,15 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$4.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/the weeknd.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -260,8 +309,15 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$4.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/imagine.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -275,7 +331,7 @@
         </section>
 
         <section id="new">
-            <div class="container">
+            <div class="container wow fadeInUp" data-wow-delay="100ms">
                 <div class="row">
                     <div class="col-12">
                         <div class="heading">
@@ -288,8 +344,16 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$2.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/beyonce.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -303,8 +367,15 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$0.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/basta.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -318,8 +389,15 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$3.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/rihanna.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -333,8 +411,15 @@
                             <div class="card">
                                 <div class="image">
                                     <p class="cost">$5.99</p>
-                                    <i class="fa-solid fa-heart heart"></i>
-                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                    <form>
+                                        <button type="submit" class="wish"><i
+                                                class="fa-solid fa-heart heart"></i></button>
+                                    </form>
+                                    <form>
+                                        <button type="submit" class="cart">
+                                            <i class="fa-solid fa-basket-shopping basket"></i>
+                                        </button>
+                                    </form>
                                     <img src="./assets/images/queen.jpg" alt="">
                                 </div>
                                 <div class="name">
@@ -343,7 +428,6 @@
                             </div>
                         </a>
                     </div>
-
                     <div class="col-12">
                         <div class="button-part">
                             <button><a href="">Discover<i class="fa-solid fa-angles-right"></i></a></button>
@@ -356,16 +440,16 @@
         <section id="feature">
             <div class="bg-image">
                 <div class="col-12 col-md-5 col-lg-3">
-                    <div class="image">
+                    <div class="image wow fadeInUp" data-wow-delay="100ms">
                         <img src="./assets/images/fa.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-md-7 col-lg-9">
-                    <div class="text">
+                    <div class="text wow fadeInUp" data-wow-delay="100ms">
                         <p>See what’s new</p>
                         <h2>BUY WHAT'S NEW</h2>
                     </div>
-                    <div class="text-part">
+                    <div class="text-part wow fadeInUp" data-wow-delay="100ms">
                         <p>One Sound is a music, audio service. Users select music to purchase or can listen to
                             existing playlists. New subscribers get a one-month free or six months free trial with
                             the purchase of select products before the service requires a monthly subscription.</p>
@@ -378,45 +462,251 @@
 
         </section>
 
+        <section id="various">
+            <div class="container wow fadeInUp" data-wow-delay="100ms">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="weeks-top">
+                            <div class="heading">
+                                <p>See what’s new</p>
+                                <h2>This week’s top</h2>
+                            </div>
 
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/imagine-evolve.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>Imagine Dragons</h6>
+                                    <p>Evolve</p>
+                                </div>
+                            </div>
 
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/eminem-encore.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>Eminem</h6>
+                                    <p>Encore</p>
+                                </div>
+                            </div>
 
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/hajime-yamakasi.jpeg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>Hajime</h6>
+                                    <p>Yamakasi</p>
+                                </div>
+                            </div>
 
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/the weeknd.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>The Weeknd</h6>
+                                    <p>After Hours</p>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="weeks-hits">
+                            <div class="heading">
+                                <p>See what’s new</p>
+                                <h2>New Hits</h2>
+                            </div>
 
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/imagine-evolve.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>Imagine Dragons</h6>
+                                    <p>Thunder</p>
+                                </div>
+                            </div>
 
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/eminem-encore.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>Eminem</h6>
+                                    <p>Mockingbird</p>
+                                </div>
+                            </div>
+
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/hajime-yamakasi.jpeg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>Hajime</h6>
+                                    <p>Tantra</p>
+                                </div>
+                            </div>
+
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/the weeknd.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>The Weeknd</h6>
+                                    <p>Save Your Tears</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="weeks-artist">
+                            <div class="heading">
+                                <p>See what’s new</p>
+                                <h2>Popular Artist</h2>
+                            </div>
+
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/eminem.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <p>Eminem</p>
+                                </div>
+                            </div>
+
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/drake.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <p>Drake</p>
+                                </div>
+                            </div>
+
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/peggy.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <p>Peggy Gou</p>
+                                </div>
+                            </div>
+
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/ollane.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <p>Ollane</p>
+                                </div>
+                            </div>
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="./assets/images/sam smith.jpg" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <p>Sam Smith</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="bg-image">
+                <div class="data  wow fadeInUp" data-wow-delay="100ms">
+                    <p>See what’s new</p>
+                    <h2>Get in touch</h2>
+                    <form action="">
+                        <input type="email" placeholder="E-mail">
+                        <button><a href="">Send<i class="fa-solid fa-angles-right"></i></a></button>
+                    </form>  
+                </div>
+                            
+            </div>
+        </section>
+
+        <section id="scrollBtn">
+            <div class="btn ">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+        </section>
     </main>
+    <!-- Main-part-end -->
 
+    <!-- Footer-part-start -->
+    <footer>
+        <section id="logo-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./assets/images/logo.png" alt="">
 
+                            <p class="slogan">Music For EveryOne</p>
 
+                        </div>
+                    </div>
 
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="links">
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="">Albums</a></li>
+                                <li><a href="">Events</a></li>
+                                <li><a href="">News</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>              
+                </div>
+            </div>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="social-media">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="info">
+                            <p>Copyright © 2023 One Sound. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
+    </footer>
+    <!-- Footer-part-end -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <script src="./assets/lib/wow/wow.min.js"></script>
     <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
     <script src="https://kit.fontawesome.com/f53cdaa4b1.js" crossorigin="anonymous"></script>
     <script src="./assets/js/home/home.js"></script>
 </body>
