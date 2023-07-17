@@ -217,7 +217,7 @@ header .sidebar .sidebar-set .tab-menu .infos ul .shop .cartlist .cart i {
   text-align: center;
 }
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 1200px) {
   #nav-phone {
     display: block !important;
   }
@@ -539,7 +539,7 @@ main #albums {
   text-align: center;
 }
 main #albums .heading p {
-  margin-top: 50px;
+  margin-top: 20px;
   font-family: mySecondFont;
   font-size: 15px;
   color: rgb(169, 165, 165);
@@ -549,7 +549,7 @@ main #albums .heading h2 {
   letter-spacing: 10px;
 }
 main #albums .album-text {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 300px;
 }
 main #albums .album-text p {
@@ -561,119 +561,165 @@ main #albums .album-text p {
   font-weight: 400;
 }
 main #latest-albums-area .albums {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 main #latest-albums-area .albums a {
   width: auto;
   height: auto;
   text-decoration: none;
+  transition: all 0.5s;
 }
 main #latest-albums-area .albums a .card {
-  width: 230px;
-  height: 100%;
   transition: all 0.5s;
   border: 1px solid transparent;
-}
-main #latest-albums-area .albums a .card .image {
   position: relative;
 }
-main #latest-albums-area .albums a .card .image img {
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+main #latest-albums-area .albums a .card img {
+  width: 100%;
+  height: 100%;
 }
-main #latest-albums-area .albums a .card .image .cost {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-  background-color: white;
-  font-family: mySecondFont;
-  font-size: 13px;
-  border-radius: 15px;
-  padding-left: 5px;
-  width: 40px;
-  display: none;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-main #latest-albums-area .albums a .card .image .wish {
-  position: absolute;
-  top: 30px;
-  left: 190px;
-  border: none;
-  background-color: transparent;
-  display: none;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-main #latest-albums-area .albums a .card .image .cart {
-  position: absolute;
-  top: 55px;
-  left: 190px;
-  border: none;
-  background-color: transparent;
-  display: none;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-main #latest-albums-area .albums a .card .name {
-  text-align: center;
-  font-family: mySecondFont;
+main #latest-albums-area .albums a .card h5 {
   padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all 0.5s;
+  font-family: mySecondFont;
 }
-main #latest-albums-area .albums a .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+main #latest-albums-area .albums a .card span {
+  margin-top: -3px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 17px;
+  font-size: 100;
+  transition: all 0.5s;
+  font-family: mySecondFont;
 }
-main #latest-albums-area .albums a .card:hover .name {
+main #latest-albums-area .albums a .card .image-hover {
+  position: absolute;
+  top: 70px;
+  height: 520px;
+  width: 376px;
+  transition: all 0.5s;
+}
+main #latest-albums-area .albums a .card .image-hover .cost {
+  padding: 0px;
+  width: 150px;
+  margin-left: 40px;
+  font-family: mySecondFont;
+  font-size: 20px;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #latest-albums-area .albums a .card .image-hover .cost:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #latest-albums-area .albums a .card .image-hover .text {
+  padding-top: 2px;
+  width: 150px;
+  margin-left: 40px;
+  font-family: mySecondFont;
+  font-size: 17px;
+  font-style: italic;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #latest-albums-area .albums a .card .image-hover .text:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #latest-albums-area .albums a .card .image-hover .artist {
+  padding-top: 4px;
+  font-family: mySecondFont;
+  width: 150px;
+  margin-left: 40px;
+  font-size: 18px;
+  font-style: italic;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #latest-albums-area .albums a .card .image-hover .artist:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #latest-albums-area .albums a .card .image-hover .icons {
+  width: 150px;
+  justify-content: space-around;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 6px;
+}
+main #latest-albums-area .albums a .card .image-hover .icons .wish {
+  border: none;
+  background-color: transparent;
+}
+main #latest-albums-area .albums a .card .image-hover .icons .wish .heart {
+  font-size: 18px;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #latest-albums-area .albums a .card .image-hover .icons .wish .heart:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #latest-albums-area .albums a .card .image-hover .icons .cart {
+  border: none;
+  background-color: transparent;
+}
+main #latest-albums-area .albums a .card .image-hover .icons .cart .basket {
+  font-size: 18px;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #latest-albums-area .albums a .card .image-hover .icons .cart .basket:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #latest-albums-area .albums a .card img:hover .card {
+  filter: brightness(0.8);
+}
+main #latest-albums-area .button-part {
+  margin-top: 30px;
+  text-align: center;
+}
+main #latest-albums-area .button-part button {
+  border: 1.5px black solid;
+  background-color: white;
+  width: 200px;
   height: 50px;
-  border-radius: 5%;
+  transition: all 0.5s;
 }
-main #latest-albums-area .albums a .card:hover .wish {
-  display: block !important;
+main #latest-albums-area .button-part button a {
+  text-decoration: none !important;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-family: mySecondFont;
+  transition: all 0.5s;
 }
-main #latest-albums-area .albums a .card:hover .cart {
-  display: block !important;
+main #latest-albums-area .button-part button a i {
+  padding-left: 5px;
 }
-main #latest-albums-area .albums a .card:hover .cost {
-  display: block !important;
+main #latest-albums-area .button-part button:hover {
+  border: 1.5px white solid;
+  background-color: black;
 }
-main #latest-albums-area .albums a .wish:hover {
-  transform: scale(1.2);
-}
-main #latest-albums-area .albums a .cart:hover {
-  transform: scale(1.2);
-}
-main #latest-albums-area .albums a .cost:hover {
-  transform: scale(1.2);
-}
-main #latest-albums-area .albums .owl-next {
-  position: absolute;
-  left: 1260px;
-  bottom: 175px;
-  background-color: #fff;
-  border: 1px black solid;
-  width: 45px;
-  height: 45px;
-  font-size: 18px;
-}
-main #latest-albums-area .albums .owl-prev {
-  position: absolute;
-  right: 1285px;
-  bottom: 175px;
-  background-color: #fff;
-  border: 1px black solid;
-  width: 45px;
-  height: 45px;
-  font-size: 18px;
+main #latest-albums-area .button-part button:hover a {
+  color: white;
 }
 main #new {
   background-color: #f5f9fa;
-  height: 65vh;
+  height: 70vh;
+  margin-top: 30px;
 }
 main #new .heading {
   text-align: center;
 }
 main #new .heading p {
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: mySecondFont;
   font-size: 15px;
   color: rgb(169, 165, 165);
@@ -689,89 +735,123 @@ main #new a {
   width: auto;
   height: auto;
   text-decoration: none;
-  margin-top: 150px;
+  transition: all 0.5s;
 }
 main #new a .card {
-  width: 250px;
-  height: 100%;
   transition: all 0.5s;
   border: 1px solid transparent;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-main #new a .card .image {
   position: relative;
 }
-main #new a .card .image img {
+main #new a .card img {
   width: 100%;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  height: 100%;
 }
-main #new a .card .image .cost {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-  background-color: white;
-  font-family: mySecondFont;
-  font-size: 13px;
-  border-radius: 15px;
-  padding-left: 5px;
-  width: 40px;
-  display: none;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-main #new a .card .image .wish {
-  position: absolute;
-  top: 30px;
-  left: 210px;
-  border: none;
-  background-color: transparent;
-  display: none;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-main #new a .card .image .cart {
-  position: absolute;
-  top: 55px;
-  left: 210px;
-  border: none;
-  background-color: transparent;
-  display: none;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-main #new a .card .name {
-  text-align: center;
-  font-family: mySecondFont;
+main #new a .card h5 {
   padding-top: 10px;
-  background-color: #f5f9fa;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all 0.5s;
+  font-family: mySecondFont;
+  background-color: transparent;
 }
-main #new a .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+main #new a .card span {
+  margin-top: -3px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 17px;
+  font-size: 100;
+  transition: all 0.5s;
+  font-family: mySecondFont;
 }
-main #new a .card:hover .wish {
-  display: block !important;
+main #new a .card .image-hover {
+  position: absolute;
+  top: 100px;
+  height: 520px;
+  width: 376px;
+  transition: all 0.5s;
 }
-main #new a .card:hover .cart {
-  display: block !important;
+main #new a .card .image-hover .cost {
+  padding: 0px;
+  width: 150px;
+  margin-left: 75px;
+  font-family: mySecondFont;
+  font-size: 20px;
+  transition: all 0.5s;
+  color: #fff;
 }
-main #new a .card:hover .cost {
-  display: block !important;
-}
-main #new a .wish:hover {
+main #new a .card .image-hover .cost:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
-main #new a .cart:hover {
-  transform: scale(1.2);
+main #new a .card .image-hover .text {
+  padding-top: 2px;
+  width: 150px;
+  margin-left: 75px;
+  font-family: mySecondFont;
+  font-size: 17px;
+  font-style: italic;
+  transition: all 0.5s;
+  color: #fff;
 }
-main #new a .cost:hover {
+main #new a .card .image-hover .text:hover {
   transform: scale(1.2);
+  cursor: pointer;
+}
+main #new a .card .image-hover .artist {
+  padding-top: 4px;
+  font-family: mySecondFont;
+  width: 150px;
+  margin-left: 75px;
+  font-size: 18px;
+  font-style: italic;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #new a .card .image-hover .artist:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #new a .card .image-hover .icons {
+  width: 150px;
+  justify-content: space-around;
+  display: flex;
+  margin-left: 75px;
+  margin-top: 6px;
+}
+main #new a .card .image-hover .icons .wish {
+  border: none;
+  background-color: transparent;
+}
+main #new a .card .image-hover .icons .wish .heart {
+  font-size: 18px;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #new a .card .image-hover .icons .wish .heart:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #new a .card .image-hover .icons .cart {
+  border: none;
+  background-color: transparent;
+}
+main #new a .card .image-hover .icons .cart .basket {
+  font-size: 18px;
+  transition: all 0.5s;
+  color: #fff;
+}
+main #new a .card .image-hover .icons .cart .basket:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main #new a .card img:hover .card {
+  filter: brightness(0.8);
 }
 main #new .button-part {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 main #new .button-part button {
@@ -799,57 +879,146 @@ main #new .button-part button:hover {
 main #new .button-part button:hover a {
   color: white;
 }
-main #feature .bg-image {
-  background-image: url(../../images/bg-4.jpg);
-  width: 100%;
-  height: 500px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: brightness(65%);
+main #event .heading {
+  text-align: center;
 }
-main #feature .bg-image .image {
-  width: 350px;
-  height: 350px;
-  margin-left: 350px;
+main #event .heading p {
+  margin-top: 20px;
+  font-family: mySecondFont;
+  font-size: 15px;
+  color: rgb(169, 165, 165);
 }
-main #feature .bg-image .image img {
+main #event .heading h2 {
+  font-family: mySecondFont;
+  letter-spacing: 10px;
+}
+main #event .main-part {
+  padding-top: 20px;
+}
+main #event .main-part .image {
+  height: 300px;
+}
+main #event .main-part .image img {
   width: 100%;
   height: 100%;
 }
-main #feature .bg-image .text {
-  margin-left: 350px;
+main #event .main-part .text-part {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px 15px;
+  background-color: #000;
+  transition-duration: 500ms;
+}
+main #event .main-part .text-part h4 {
   color: #fff;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 700;
   font-family: mySecondFont;
+  font-size: 17px;
+  letter-spacing: 5px;
 }
-main #feature .bg-image .text p {
-  font-size: 15px;
+main #event .main-part .text-part .part {
+  position: relative;
+  margin-bottom: 30px;
 }
-main #feature .bg-image .text h2 {
-  font-size: 18px;
-  letter-spacing: 10px;
+main #event .main-part .text-part .part a:first-child::after {
+  position: absolute;
+  content: "|";
+  top: 0;
+  right: 12px;
+  z-index: 1;
 }
-main #feature .bg-image .text-part {
-  margin-left: 350px;
+main #event .main-part .text-part .part .event-place {
+  transition-duration: 500ms;
+  position: relative;
+  z-index: 1;
   color: #fff;
-  font-family: mySecondFont;
-  font-size: 15px;
-  line-height: 2;
+  font-size: 13px;
   font-weight: 400;
-  width: 550px;
+  display: inline-block;
+  padding-right: 29px;
+  text-decoration: none;
+  font-family: mySecondFont;
+}
+main #event .main-part .text-part .part .event-date {
+  transition-duration: 500ms;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  font-family: mySecondFont;
+}
+main #event .main-part .text-part:hover {
+  background-color: #f5f9fa;
+  cursor: pointer;
+  box-shadow: 0 5px 80px 0 rgba(0, 0, 0, 0.2);
+}
+main #event .main-part .text-part:hover h4 {
+  color: black;
+}
+main #event .main-part .text-part:hover .part .event-place {
+  color: black;
+}
+main #event .main-part .text-part:hover .part .event-date {
+  color: black;
+}
+main #event .button-part {
+  text-align: center;
+}
+main #event .button-part button {
+  border: 1.5px black solid;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+}
+main #event .button-part button a {
+  text-decoration: none !important;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-family: mySecondFont;
+  transition: all 0.5s;
+}
+main #event .button-part button a i {
+  padding-left: 5px;
+}
+main #event .button-part button:hover {
+  border: 1.5px white solid;
+  background-color: black;
+}
+main #event .button-part button:hover a {
+  color: white;
 }
 main #various {
   height: 90vh;
+  background-color: #f5f9fa;
+}
+main #various .heading {
+  text-align: center;
+}
+main #various .heading p {
+  font-family: mySecondFont;
+  font-size: 15px;
+  color: rgb(169, 165, 165);
+}
+main #various .heading h2 {
+  font-family: mySecondFont;
+  letter-spacing: 10px;
 }
 main #various .weeks-top {
+  border: 1px solid #d8d8d8;
+  background-color: white;
   margin-top: 70px;
   height: 100%;
 }
 main #various .weeks-top .heading {
-  margin-top: 100px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 main #various .weeks-top .heading p {
@@ -899,7 +1068,7 @@ main #various .weeks-top .main-part .text-part h6 {
 }
 main #various .weeks-hits {
   border: 1px solid #d8d8d8;
-  background-color: #f5f9fa;
+  background-color: white;
   margin-top: 70px;
   height: 100%;
 }
@@ -954,7 +1123,7 @@ main #various .weeks-hits .main-part .text-part h6 {
 }
 main #various .weeks-artist {
   border: 1px solid #d8d8d8;
-  background-color: #f5f9fa;
+  background-color: white;
   margin-top: 70px;
   height: 100%;
 }
@@ -1171,4 +1340,41 @@ footer #logo-part .info {
   width: 100%;
   z-index: 50;
   background-color: black !important;
+}
+
+@keyframes slidewords {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transform-origin: 0px 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.hide-animation {
+  position: absolute;
+  z-index: -2;
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-delay: 100ms;
+  animation-name: slidewords;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.slider-animation {
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-delay: 100ms;
+  animation-name: slidewords;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.backgroundC {
+  filter: brightness(0.9);
 }/*# sourceMappingURL=home.css.map */

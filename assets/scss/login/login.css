@@ -428,12 +428,17 @@ main #scrollBtn .btn i:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-@media only screen and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 850px) {
+  #bg-img .img .event {
+    width: 150px !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 1200px) {
   #bg-img .img .event {
     width: 350px !important;
   }
 }
-@media only screen and (max-width: 992px) {
+@media (max-width: 1200px) {
   #nav-phone {
     display: block !important;
   }

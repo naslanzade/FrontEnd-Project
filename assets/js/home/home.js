@@ -60,8 +60,13 @@ $(document).ready(function () {
   $(".albums").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     responsiveClass: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
     responsive: {
       0: {
         items: 2,
@@ -100,6 +105,31 @@ $(document).ready(function () {
     }
   });
 
+      //Albums hover
+      let all = document.querySelectorAll(".people");
+      all.forEach(each => {
+          each.addEventListener("mouseenter", function (e) {
+              e.preventDefault();
+  
+              each.classList.add("backgroundC")
+              each.children[3].classList.remove("d-none");
+              each.children[3].classList.add("slider-animation");
+              each.children[2].classList.add("hide-animation");
+              each.children[1].classList.add("hide-animation");
+          })
+      });
+  
+      all.forEach(each => {
+          each.addEventListener("mouseleave", function (e) {
+              e.preventDefault();
+  
+              each.classList.remove("backgroundC")
+              each.children[3].classList.add("d-none");
+              each.children[3].classList.remove("slider-animation");
+              each.children[2].classList.remove("hide-animation");
+              each.children[1].classList.remove("hide-animation");
+          })
+      });
 
 
    
