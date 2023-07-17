@@ -537,7 +537,7 @@ main #scrollBtn .btn i:hover {
 
 @media (min-width: 0px) and (max-width: 850px) {
   #bg-img .img .event {
-    width: 150px !important;
+    width: 250px !important;
   }
 }
 @media (min-width: 750px) and (max-width: 1200px) {
