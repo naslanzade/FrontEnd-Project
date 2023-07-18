@@ -63,8 +63,8 @@ $(document).ready(function () {
     nav: false,
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 1000,
+    autoplayTimeout: 6000,
+    smartSpeed: 3000,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     responsive: {

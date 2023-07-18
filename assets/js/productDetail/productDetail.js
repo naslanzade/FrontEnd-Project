@@ -37,7 +37,7 @@ $(document).ready(function () {
   
  
   
-    //Scroll to top button
+    // //Scroll to top button
     let scrollBtn = document.querySelector("#scrollBtn .btn");
     scrollBtn.addEventListener("click", function (e) {
       document.body.scrollTop = 0;
@@ -51,6 +51,9 @@ $(document).ready(function () {
         scrollBtn.style.opacity = 0;
       }
     });
+
+
+
   
   
   
