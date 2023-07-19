@@ -393,17 +393,23 @@ footer {
             text-align: center;
             margin-top: 20px;
 
-            i {
-                width: 25px;
-                height: 25px;
-                margin-left: 10px;
-                border-radius: 50%;
-                border: 0.5px solid white;
-                font-size: 12px;
-                padding: 5px;
-                color: rgb(169, 165, 165);
-                transition: all 0.5s;
+
+            a{
+                text-decoration: none;
+                i {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    border: 0.5px solid white;
+                    font-size: 12px;
+                    padding: 5px;
+                    color: rgb(169, 165, 165);
+                    transition: all 0.5s;
+                }
+
             }
+           
 
 
             i:hover {
@@ -473,16 +479,18 @@ main {
 
     #detail {
         padding-top: 5%;
-        background-color: #f5f9fa;
+
 
         .left-img {
             float: right;
             position: relative;
-            right: 62px;
+           
             margin-bottom: 23%;
+
 
             img {
                 width: 450px;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
             }
 
             .down-img {
@@ -505,7 +513,7 @@ main {
         .right {
             display: flex;
 
-            .right-side{
+            .right-side {
                 h2 {
 
                     font-family: mySecondFont;
@@ -515,52 +523,70 @@ main {
                     padding-bottom: 10px;
                     font-style: italic;
                     color: #000000;
-    
+
                 }
-    
+
                 .name {
                     font-weight: 300;
                     font-size: 15px;
                     color: rgb(98, 97, 97);
                     font-style: italic;
                     font-family: mySecondFont;
-    
+
                 }
-    
-                .data {            
-                    
-                 p{
-                    font-size: 15px;                        
-                    line-height: 0%;
-                    font-family: mySecondFont;
-                    transition: all 0.5s;               
-                    height: 30px;
-                    width: 300px;
-                    padding: 7px;
-                   
-                    i{
-                        padding-right: 20px;
-                        
-                    }
-                 }
-    
-                 p:hover{
-                    background-color: #D3D3D3;
-                    cursor: pointer;
-                    color: white;
-                    font-style: italic;
-    
-                    i{
+
+                .data {
+                    padding-right: 50px;
+
+                    p {
+                        font-size: 15px;
+                        line-height: 0%;
+                        font-family: mySecondFont;
+                        transition: all 0.5s;
+                        height: 30px;
+                        width: 300px;
+                        padding: 7px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        background-color: rgb(0, 0, 0);                        
+                        cursor: pointer;
                         color: white;
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+
+
+                        i {
+                            padding-right: 20px;
+                             color: #1DB954;
+
+                        }
+
+                        span {
+                            padding-left: 80px;
+                        }
                     }
-                 }
-    
+
+                    // p:hover {
+                    //     background-color: rgb(0, 0, 0);
+                        
+                    //     cursor: pointer;
+                    //     color: white;
+                    //     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+
+
+                    //     i {
+                    //         color: #1DB954;
+                    //     }
+                    // }
+
                 }
 
             }
 
-            .left-side{
+            .left-side {
                 padding-top: 15px;
+               
 
                 span {
                     font-size: 20px;
@@ -576,27 +602,103 @@ main {
                 }
 
                 .social-media {
-            
+
                     margin-top: 30px;
-        
-                    i {
-                        width: 25px;
-                        height: 25px;
-                        margin-left: 10px;
-                        border-radius: 50%;
-                        border: 0.5px solid white;
-                        font-size: 16px;
-                        padding: 5px;
-                        color: black;
+
+
+                    a {
+                        text-decoration: none;
                         transition: all 0.5s;
+
+                        i {
+                            width: 30px;
+                            height: 30px;
+                            font-size: 16px;
+                            padding-left: 20px;
+                            color: black;                            
+                            padding: 7px;
+                            border: 0.5px solid transparent;
+                            background-color: black;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            color: white;
+                        }
+
+
+                        
                     }
-        
-        
-                    i:hover {
-                        transform: scale(1.1);
+                 
+
+                    .fa-facebook-f:hover {
                         cursor: pointer;
+                        border: 0.5px solid transparent;
+                        background-color: #3b5998;
+                        color: white;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                        
                     }
-        
+
+                    .fa-instagram:hover {
+                        cursor: pointer;
+                        border: 0.5px solid transparent;
+                        background: #d6249f;
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                        color: #fff;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                    }
+
+                    .fa-twitter:hover {
+                        cursor: pointer;
+                        border: 0.5px solid transparent;
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                        background: white;
+                        color: #1DA1F2;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                    }
+
+                    .fa-youtube:hover {
+                        cursor: pointer;
+                        border: 0.5px solid transparent;
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                        background-color: rgb(201, 0, 0);
+                        color: #fff;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                    }
+
+                    .fa-telegram:hover {
+                        cursor: pointer;
+                        border: 0.5px solid transparent;
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                        background: white;
+                        color: #1DA1F2;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+
+                    }
+
+
+
                 }
 
                 .icons {
@@ -679,7 +781,7 @@ main {
         }
     }
 
-    
+
     #scrollBtn {
 
         background-color: #000000;

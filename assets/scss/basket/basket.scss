@@ -382,27 +382,26 @@ footer {
                     }
                 }
             }
-
-
-
-
-
         }
 
         .social-media {
             text-align: center;
             margin-top: 20px;
 
-            i {
-                width: 25px;
-                height: 25px;
-                margin-left: 10px;
-                border-radius: 50%;
-                border: 0.5px solid white;
-                font-size: 12px;
-                padding: 5px;
-                color: rgb(169, 165, 165);
-                transition: all 0.5s;
+            a{
+                text-decoration: none;
+                i {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    border: 0.5px solid white;
+                    font-size: 12px;
+                    padding: 5px;
+                    color: rgb(169, 165, 165);
+                    transition: all 0.5s;
+                }
+
             }
 
 

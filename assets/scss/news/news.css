@@ -275,7 +275,10 @@ footer #logo-part .social-media {
   text-align: center;
   margin-top: 20px;
 }
-footer #logo-part .social-media i {
+footer #logo-part .social-media a {
+  text-decoration: none;
+}
+footer #logo-part .social-media a i {
   width: 25px;
   height: 25px;
   margin-left: 10px;
@@ -346,15 +349,15 @@ main #blog-area .blog .img a img {
   height: 100%;
 }
 main #blog-area .blog .blog-content {
-  background-color: #f5f9fa;
+  background-color: #000;
+  transition-duration: 500ms;
   padding: 45px 40px;
-  border: 1px solid #d8d8d8;
 }
 main #blog-area .blog .blog-content .title {
   text-decoration: none;
   font-size: 24px;
   display: block;
-  color: black;
+  color: white;
   font-family: mySecondFont;
 }
 main #blog-area .blog .blog-content .post {
@@ -362,7 +365,7 @@ main #blog-area .blog .blog-content .post {
   margin-bottom: 10px;
 }
 main #blog-area .blog .blog-content .post p {
-  color: #8d8d8d;
+  color: white;
   font-size: 13px;
   padding-right: 25px;
   font-family: mySecondFont;
@@ -375,7 +378,7 @@ main #blog-area .blog .blog-content .post p ::after {
 }
 main #blog-area .blog .blog-content .post p a {
   text-decoration: none;
-  color: #8d8d8d;
+  color: white;
   font-size: 13px;
   margin-bottom: 0;
   font-weight: 400;
@@ -383,10 +386,24 @@ main #blog-area .blog .blog-content .post p a {
 }
 main #blog-area .blog .blog-content p {
   font-family: mySecondFont;
-  color: #5f5f5f;
+  color: white;
   font-size: 15px;
   line-height: 2;
   font-weight: 400;
+}
+main #blog-area .blog .blog-content:hover {
+  background-color: #f5f9fa;
+  cursor: pointer;
+  box-shadow: 0 5px 80px 0 rgba(0, 0, 0, 0.2);
+}
+main #blog-area .blog .blog-content:hover a {
+  color: #000;
+}
+main #blog-area .blog .blog-content:hover p {
+  color: #000;
+}
+main #blog-area .blog .blog-content:hover p a {
+  color: #000;
 }
 main #blog-area .blog-sidebar {
   margin-top: 70px;

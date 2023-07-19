@@ -275,7 +275,10 @@ footer #logo-part .social-media {
   text-align: center;
   margin-top: 20px;
 }
-footer #logo-part .social-media i {
+footer #logo-part .social-media a {
+  text-decoration: none;
+}
+footer #logo-part .social-media a i {
   width: 25px;
   height: 25px;
   margin-left: 10px;
@@ -331,16 +334,15 @@ main #bg-img .img .event h2 {
 }
 main #detail {
   padding-top: 5%;
-  background-color: #f5f9fa;
 }
 main #detail .left-img {
   float: right;
   position: relative;
-  right: 62px;
   margin-bottom: 23%;
 }
 main #detail .left-img img {
   width: 450px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 main #detail .left-img .down-img {
   display: flex;
@@ -374,6 +376,9 @@ main #detail .right .right-side .name {
   font-style: italic;
   font-family: mySecondFont;
 }
+main #detail .right .right-side .data {
+  padding-right: 50px;
+}
 main #detail .right .right-side .data p {
   font-size: 15px;
   line-height: 0%;
@@ -382,18 +387,21 @@ main #detail .right .right-side .data p {
   height: 30px;
   width: 300px;
   padding: 7px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 main #detail .right .right-side .data p i {
   padding-right: 20px;
+  color: #1DB954;
 }
-main #detail .right .right-side .data p:hover {
-  background-color: #D3D3D3;
-  cursor: pointer;
-  color: white;
-  font-style: italic;
-}
-main #detail .right .right-side .data p:hover i {
-  color: white;
+main #detail .right .right-side .data p span {
+  padding-left: 80px;
 }
 main #detail .right .left-side {
   padding-top: 15px;
@@ -411,20 +419,80 @@ main #detail .right .left-side span:hover {
 main #detail .right .left-side .social-media {
   margin-top: 30px;
 }
-main #detail .right .left-side .social-media i {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
-  border-radius: 50%;
-  border: 0.5px solid white;
-  font-size: 16px;
-  padding: 5px;
-  color: black;
+main #detail .right .left-side .social-media a {
+  text-decoration: none;
   transition: all 0.5s;
 }
-main #detail .right .left-side .social-media i:hover {
-  transform: scale(1.1);
+main #detail .right .left-side .social-media a i {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 20px;
+  color: black;
+  padding: 7px;
+  border: 0.5px solid transparent;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+}
+main #detail .right .left-side .social-media .fa-facebook-f:hover {
   cursor: pointer;
+  border: 0.5px solid transparent;
+  background-color: #3b5998;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+main #detail .right .left-side .social-media .fa-instagram:hover {
+  cursor: pointer;
+  border: 0.5px solid transparent;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main #detail .right .left-side .social-media .fa-twitter:hover {
+  cursor: pointer;
+  border: 0.5px solid transparent;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+  color: #1DA1F2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main #detail .right .left-side .social-media .fa-youtube:hover {
+  cursor: pointer;
+  border: 0.5px solid transparent;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  background-color: rgb(201, 0, 0);
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main #detail .right .left-side .social-media .fa-telegram:hover {
+  cursor: pointer;
+  border: 0.5px solid transparent;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+  color: #1DA1F2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 main #detail .right .left-side .icons {
   display: flex;
