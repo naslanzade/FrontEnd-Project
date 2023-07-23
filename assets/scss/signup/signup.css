@@ -1,3 +1,526 @@
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  #nav-phone .container .logo img {
+    width: 100px !important;
+    margin-left: 20px !important;
+  }
+  #nav-phone .container .logo .open {
+    margin-left: -50px !important;
+  }
+  #logo-part .links ul li a {
+    font-size: 15px !important;
+    margin-left: 10px !important;
+    transition: all 0.5s;
+  }
+  #logo-part .links ul li a:hover {
+    color: white;
+  }
+  #hero-part .slides .bg-img {
+    height: 400px !important;
+  }
+  #hero-part .slides .bg-img img {
+    width: 550px !important;
+  }
+  #hero-part .slides .bg-img .text-part h6 {
+    margin-left: -50% !important;
+    font-size: 15px !important;
+    letter-spacing: 10px !important;
+  }
+  #hero-part .slides .bg-img .text-part h2 {
+    margin-left: -60% !important;
+    font-size: 15px !important;
+    letter-spacing: 15px !important;
+  }
+  #hero-part .slides .bg-img .text-part button {
+    margin-left: -20% !important;
+    width: 120px !important;
+    height: 40px !important;
+    text-align: center;
+    padding: 5px !important;
+  }
+  #hero-part .slides .bg-img .text-part button a {
+    text-decoration: none !important;
+    color: white;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #hero-part .slides .bg-img .text-part button a i {
+    padding-left: 5px;
+  }
+  #hero-part .slides .bg-img .text-part button button:hover {
+    background-color: white;
+  }
+  #hero-part .slides .bg-img .text-part button button:hover a {
+    color: black;
+  }
+  #latest-albums-area .albums a .card h5 {
+    font-size: 15px !important;
+  }
+  #latest-albums-area .albums a .card span {
+    font-size: 12px !important;
+  }
+  #new {
+    height: 110% !important;
+  }
+  #new .heading h2 {
+    letter-spacing: 10px !important;
+    font-size: 15px !important;
+  }
+  #new a {
+    width: auto !important;
+    height: auto !important;
+  }
+  #new a .card {
+    width: 336px !important;
+    height: 75% !important;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+  }
+  #new a .card img {
+    width: 100% !important;
+    height: 250px !important;
+  }
+  #new a .card h5 {
+    text-align: center !important;
+  }
+  #new .button-part {
+    margin-bottom: 50px !important;
+    text-align: center;
+  }
+  #new .button-part button {
+    border: 1.5px black solid;
+    background-color: white;
+    width: 150px !important;
+    height: 40px !important;
+    transition: all 0.5s;
+  }
+  #new .button-part button a {
+    text-decoration: none !important;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #new .button-part button a i {
+    padding-left: 5px;
+  }
+  #new .button-part button:hover {
+    border: 1.5px white solid;
+    background-color: black;
+  }
+  #new .button-part button:hover a {
+    color: white;
+  }
+  #various {
+    height: 300vh !important;
+  }
+  #various .weeks-hits {
+    margin-bottom: 150px !important;
+    height: 100% !important;
+  }
+  #various .weeks-artist {
+    margin-top: 50px !important;
+    height: 100% !important;
+  }
+  #contact .bg-image {
+    width: 100% !important;
+  }
+  #contact .bg-image form input {
+    width: 300px !important;
+  }
+  #contact .bg-image form button {
+    margin-top: 20px;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #basket .table-area {
+    padding-left: 0px;
+    overflow-x: scroll;
+    margin-top: 49px;
+    margin-bottom: 40px;
+  }
+  #basket .table-area .table-products {
+    width: 748px;
+  }
+  #basket .table-area .table-products .table td {
+    width: 22%;
+    font-size: 15px;
+  }
+  #basket .table-area .table-products .table td input {
+    width: 42px;
+  }
+  #basket .table-area .table-products .table td:nth-child(4) {
+    padding-top: 47px;
+  }
+  #basket .table-area .table-products .table .price {
+    padding-top: 55px !important;
+    display: flex !important;
+    height: 150px;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #contact-area .map-area iframe {
+    width: 330px !important;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #contact .bg-image {
+    width: 100% !important;
+  }
+  #contact .bg-image form input {
+    width: 300px !important;
+  }
+  #contact .bg-image form button {
+    margin-top: 20px;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #wishlist .table-area {
+    padding-left: 0px;
+    overflow-x: scroll;
+    margin-top: 49px;
+    margin-bottom: 40px;
+  }
+  #wishlist .table-area .table-products {
+    width: 650px;
+  }
+  #wishlist .table-area .table-products .table td {
+    width: 15%;
+    font-size: 15px;
+  }
+  #wishlist .table-area .table-products .table td:nth-child(4) {
+    padding-top: 47px;
+  }
+  #wishlist .table-area .table-products .table .price {
+    padding-top: 55px !important;
+    display: flex !important;
+    height: 150px;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #bg-img .img .event h2 {
+    font-size: 18px !important;
+  }
+  #resset .content form input {
+    width: 170px !important;
+  }
+  #resset .content .button-part {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  #bg-img .img .login {
+    width: 250px !important;
+  }
+  #signIn .content form input {
+    width: 170px !important;
+  }
+  #signIn .content .button-part {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  #signIn .content p a {
+    font-size: 14px !important;
+  }
+  #bg-img .img .sign {
+    width: 250px !important;
+  }
+  #bg-img .img .sign h2 {
+    font-size: 18px !important;
+  }
+  #signUp .sign h3 {
+    font-size: 15px !important;
+  }
+  #signUp .sign .content form input {
+    width: 170px !important;
+  }
+  #signUp .sign .content .button-part {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  #signUp .sign .content p a {
+    font-size: 14px !important;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #shop .all .col9 a .each-cards .left img {
+    width: 150px !important;
+    height: 200px !important;
+  }
+  #bg-img .img .event {
+    width: 250px !important;
+  }
+  #detail .left-img .down-img {
+    display: flex;
+    gap: 16px !important;
+  }
+  #detail .left-img .down-img .item {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    left: 120px !important;
+  }
+  #detail .left-img .down-img .item img {
+    width: 100%;
+    height: 100%;
+  }
+  #detail .right h2 {
+    font-size: 15px !important;
+  }
+  #detail .right .data p {
+    font-size: 12px !important;
+    width: 200px !important;
+  }
+  #detail .right .left-side {
+    position: relative;
+    right: 20px !important;
+  }
+  #detail .right .left-side .social-media {
+    width: 70px !important;
+  }
+  #detail .right .left-side .social-media a i {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+    padding: 5px !important;
+  }
+  #detail .right .left-side .icons {
+    width: 110px !important;
+  }
+  #detail .right .left-side .icons .left-icon {
+    padding-right: -20px !important;
+  }
+  #detail .right .left-side .icons .left-icon span {
+    font-size: 15px !important;
+  }
+  #detail .right .left-side .icons .right-icon {
+    padding-right: -50px !important;
+  }
+  #detail .right .left-side .icons .right-icon span {
+    font-size: 15px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200) {
+  #nav-phone .container .logo img {
+    width: 100px !important;
+  }
+  #nav-phone .container .logo .open {
+    margin-left: 100px !important;
+  }
+  #logo-part .links ul li a {
+    font-size: 15px !important;
+    margin-left: 10px !important;
+    transition: all 0.5s;
+  }
+  #logo-part .links ul li a:hover {
+    color: white;
+  }
+  #hero-part .slides .bg-img {
+    position: relative;
+    height: 500px !important;
+  }
+  #hero-part .slides .bg-img img {
+    width: 100% !important;
+  }
+  #hero-part .slides .bg-img .text-part h6 {
+    position: relative;
+    left: 150px !important;
+    font-size: 12px !important;
+    letter-spacing: 10px !important;
+  }
+  #hero-part .slides .bg-img .text-part h2 {
+    position: relative;
+    left: 100px !important;
+    font-size: 12px !important;
+    letter-spacing: 15px !important;
+  }
+  #hero-part .slides .bg-img .text-part button {
+    position: relative;
+    left: -450px !important;
+    width: 120px !important;
+    height: 40px !important;
+    text-align: center;
+    padding: 5px !important;
+  }
+  #hero-part .slides .bg-img .text-part button a {
+    text-decoration: none !important;
+    color: white;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #hero-part .slides .bg-img .text-part button a i {
+    padding-left: 5px;
+  }
+  #hero-part .slides .bg-img .text-part button button:hover {
+    background-color: white;
+  }
+  #hero-part .slides .bg-img .text-part button button:hover a {
+    color: black;
+  }
+  #new {
+    height: 150% !important;
+  }
+  #new .heading h2 {
+    letter-spacing: 10px !important;
+    font-size: 15px !important;
+  }
+  #new a {
+    width: auto !important;
+    height: auto !important;
+  }
+  #new a .card {
+    width: 336px !important;
+    height: 75% !important;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+  }
+  #new a .card img {
+    width: 100% !important;
+    height: 250px !important;
+  }
+  #new a .card h5 {
+    text-align: center !important;
+  }
+  #new .button-part {
+    margin-bottom: 50px !important;
+    text-align: center;
+  }
+  #new .button-part button {
+    border: 1.5px black solid;
+    background-color: white;
+    width: 150px !important;
+    height: 40px !important;
+    transition: all 0.5s;
+  }
+  #new .button-part button a {
+    text-decoration: none !important;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #new .button-part button a i {
+    padding-left: 5px;
+  }
+  #new .button-part button:hover {
+    border: 1.5px white solid;
+    background-color: black;
+  }
+  #new .button-part button:hover a {
+    color: white;
+  }
+  #various .weeks-hits {
+    margin-bottom: 150px !important;
+    height: 100% !important;
+  }
+  #various .weeks-hits .heading h2 {
+    font-size: 12px !important;
+  }
+  #various .weeks-hits .main-part .text-part h6 {
+    font-size: 12px !important;
+  }
+  #various .weeks-artist {
+    margin-top: 70px !important;
+    height: 100% !important;
+  }
+  #various .weeks-artist .heading h2 {
+    font-size: 12px !important;
+  }
+  #various .weeks-artist .main-part .text-part h6 {
+    font-size: 12px !important;
+  }
+  #various .weeks-top .heading h2 {
+    font-size: 12px !important;
+  }
+  #various .weeks-top .main-part .text-part h6 {
+    font-size: 12px !important;
+  }
+  #contact-area .map-area iframe {
+    width: 530px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  #nav .nav-area .list ul li a {
+    font-size: 15px !important;
+  }
+  #nav .log .list ul li a {
+    font-size: 12px !important;
+  }
+  #new {
+    height: 150% !important;
+  }
+  #new .heading h2 {
+    letter-spacing: 10px !important;
+    font-size: 15px !important;
+  }
+  #new a {
+    width: auto !important;
+    height: auto !important;
+  }
+  #new a .card {
+    width: 230px !important;
+    height: 75% !important;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+  }
+  #new a .card img {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  #new a .card h5 {
+    text-align: center !important;
+  }
+  #new .button-part {
+    margin-bottom: 50px !important;
+    text-align: center;
+  }
+  #new .button-part button {
+    border: 1.5px black solid;
+    background-color: white;
+    width: 150px !important;
+    height: 40px !important;
+    transition: all 0.5s;
+  }
+  #new .button-part button a {
+    text-decoration: none !important;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    font-family: mySecondFont;
+    transition: all 0.5s;
+  }
+  #new .button-part button a i {
+    padding-left: 5px;
+  }
+  #new .button-part button:hover {
+    border: 1.5px white solid;
+    background-color: black;
+  }
+  #new .button-part button:hover a {
+    color: white;
+  }
+  #various {
+    height: 150vh !important;
+  }
+  #contact-area .map-area iframe {
+    width: 530px !important;
+  }
+  #shop .all .col9 a .each-cards .left img {
+    width: 150px !important;
+    height: 200px !important;
+  }
+}
 @font-face {
   font-family: myFirstFont;
   src: url(../../fonts/ArchivoNarrow-Italic.ttf);
@@ -313,7 +836,7 @@ main #bg-img .img {
   align-items: center;
   position: relative;
 }
-main #bg-img .img .event {
+main #bg-img .img .sign {
   position: absolute;
   bottom: 0px;
   background-color: white;
@@ -321,7 +844,7 @@ main #bg-img .img .event {
   text-align: center;
   height: 120px;
 }
-main #bg-img .img .event h2 {
+main #bg-img .img .sign h2 {
   font-size: 30px;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -419,17 +942,7 @@ main #scrollBtn .btn i:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-@media (min-width: 0px) and (max-width: 850px) {
-  #bg-img .img .event {
-    width: 250px !important;
-  }
-}
-@media (min-width: 750px) and (max-width: 1200px) {
-  #bg-img .img .event {
-    width: 350px !important;
-  }
-}
-@media (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   #nav-phone {
     display: block !important;
   }

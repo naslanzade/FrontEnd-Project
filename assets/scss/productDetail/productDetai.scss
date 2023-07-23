@@ -1,3 +1,5 @@
+@import "../helpers/responsive";
+
 @font-face {
     font-family: myFirstFont;
     src: url(../../fonts/ArchivoNarrow-Italic.ttf);
@@ -483,10 +485,8 @@ main {
 
         .left-img {
             float: right;
-            position: relative;
-           
+            position: relative;           
             margin-bottom: 23%;
-
 
             img {
                 width: 450px;
@@ -585,8 +585,7 @@ main {
             }
 
             .left-side {
-                padding-top: 15px;
-               
+                padding-top: 15px;              
 
                 span {
                     font-size: 20px;
@@ -602,10 +601,7 @@ main {
                 }
 
                 .social-media {
-
                     margin-top: 30px;
-
-
                     a {
                         text-decoration: none;
                         transition: all 0.5s;
@@ -730,7 +726,6 @@ main {
                         }
                     }
 
-
                     .left-icon:hover {
                         i {
                             color: blue !important;
@@ -744,7 +739,6 @@ main {
                     }
 
                     .right-icon {
-
                         padding-right: 50px;
 
                         button {
@@ -814,27 +808,9 @@ main {
     }
 }
 
-@media (min-width: 0px) and (max-width:850px) {
-    #bg-img {
-        .img {
-            .event {
-                width: 250px !important;
-            }
-        }
-    }
-}
 
-@media (min-width: 750px) and (max-width:1200px) {
-    #bg-img {
-        .img {
-            .event {
-                width: 350px !important;
-            }
-        }
-    }
-}
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
     #nav-phone {
         display: block !important;
     }

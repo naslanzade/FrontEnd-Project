@@ -1,4 +1,7 @@
 $(document).ready(function () {
+ 
+  
+ 
   //The wowjs
   new WOW().init();
 
@@ -21,6 +24,7 @@ $(document).ready(function () {
   $(".slides").owlCarousel({
     loop: true,
     margin: 10,
+    nav: false,
     responsiveClass: true,
     autoplay: true,
     autoplayTimeout: 3000,
@@ -30,15 +34,23 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        nav: false,
       },
       768: {
         items: 1,
+        nav: false,
+      },
+      992: {
+        items: 1,
+        nav: false,
+      },
+      1200: {
+        items: 1,
+        nav: false,
       },
     },
   });
-
-  let owlNav = document.querySelector(".owl-nav");
-  owlNav.classList.remove("disabled");
+ 
   
   //Sticky navbar
   window.onscroll = function () {
@@ -77,7 +89,7 @@ $(document).ready(function () {
         nav: false,
       },
       768: {
-        items: 3,
+        items: 2,
         nav: false,
       },
       992: {
