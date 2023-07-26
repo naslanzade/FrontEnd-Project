@@ -654,6 +654,8 @@ main {
 
             .pagination{
                 .page-item{
+
+                    list-style: none;
                     .page-link {
                         background-color: transparent;
                         display: block;
@@ -665,6 +667,7 @@ main {
                         width: 34px;
                         height: 34px;
                         line-height: 32px;
+                        text-decoration: none;
                         text-align: center;
                         margin-right: 10px;
                      

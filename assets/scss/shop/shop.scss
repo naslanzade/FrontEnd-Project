@@ -396,8 +396,9 @@ footer {
             text-align: center;
             margin-top: 20px;
 
-            a{
+            a {
                 text-decoration: none;
+
                 i {
                     width: 25px;
                     height: 25px;
@@ -532,22 +533,38 @@ main {
                             .category {
                                 padding-top: 20px;
 
+
+
+
                                 span {
-                                    font-size: 17px;
-                                    font-weight: 400;
-                                    font-family: mySecondFont;
-                                    cursor: pointer;
-                                    transition: all 0.5s;
+
+                                    a {
+                                        text-decoration: none;
+                                        font-size: 17px;
+                                        font-weight: 300;
+                                        font-family: mySecondFont;
+                                        cursor: pointer;
+                                        transition: all 0.5s;
+                                        color: black;
+
+                                    }
+
+
+
+                                    a:hover {
+
+                                        color: blue;
+                                        transform: scale(1.2);
+                                    }
 
 
 
                                 }
 
-                                span:hover {
-                                    color: blue;
-                                    transform: scale(1.2);
 
-                                }
+
+
+                                span:hover {}
 
 
 
@@ -820,19 +837,30 @@ main {
                             padding-top: 20px;
                             padding-left: 50px;
 
+
                             span {
-                                font-size: 15px;
-                                font-weight: 400;
-                                font-family: mySecondFont;
-                                cursor: pointer;
-                                transition: all 0.5s;
+
+                                a{
+
+                                    text-decoration: none;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    font-family: mySecondFont;
+                                    cursor: pointer;
+                                    transition: all 0.5s;
+                                    color: black;
+                                }
+
+
+                                a:hover{
+                                    color: blue;
+                                    transform: scale(1.2);
+
+                                }
+                               
                             }
 
-                            span:hover {
-                                color: blue;
-                                transform: scale(1.2);
-
-                            }
+                        
 
 
 

@@ -899,14 +899,16 @@ main #shop .all .col3 .left-part .accordion .accordion-item {
 main #shop .all .col3 .left-part .accordion .accordion-item .category {
   padding-top: 20px;
 }
-main #shop .all .col3 .left-part .accordion .accordion-item .category span {
+main #shop .all .col3 .left-part .accordion .accordion-item .category span a {
+  text-decoration: none;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   font-family: mySecondFont;
   cursor: pointer;
   transition: all 0.5s;
+  color: black;
 }
-main #shop .all .col3 .left-part .accordion .accordion-item .category span:hover {
+main #shop .all .col3 .left-part .accordion .accordion-item .category span a:hover {
   color: blue;
   transform: scale(1.2);
 }
@@ -1100,14 +1102,16 @@ main #filter-for-phone .all .col3 .accordion .accordion-item .category {
   padding-top: 20px;
   padding-left: 50px;
 }
-main #filter-for-phone .all .col3 .accordion .accordion-item .category span {
+main #filter-for-phone .all .col3 .accordion .accordion-item .category span a {
+  text-decoration: none;
   font-size: 15px;
   font-weight: 400;
   font-family: mySecondFont;
   cursor: pointer;
   transition: all 0.5s;
+  color: black;
 }
-main #filter-for-phone .all .col3 .accordion .accordion-item .category span:hover {
+main #filter-for-phone .all .col3 .accordion .accordion-item .category span a:hover {
   color: blue;
   transform: scale(1.2);
 }

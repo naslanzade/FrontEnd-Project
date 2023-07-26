@@ -976,6 +976,9 @@ main #blog-area .blog-sidebar .widget a img {
   width: 100%;
   height: auto;
 }
+main #blog-area .page .pagination .page-item {
+  list-style: none;
+}
 main #blog-area .page .pagination .page-item .page-link {
   background-color: transparent;
   display: block;
@@ -987,6 +990,7 @@ main #blog-area .page .pagination .page-item .page-link {
   width: 34px;
   height: 34px;
   line-height: 32px;
+  text-decoration: none;
   text-align: center;
   margin-right: 10px;
 }
